@@ -1,5 +1,7 @@
 import '../../styles/globals.scss';
 import type { Metadata } from 'next';
+import Navigation from './navigation';
+import Footer from './footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
@@ -25,7 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navigation />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
