@@ -5,7 +5,7 @@ const Footer = () => {
   const currentDate = new Date();
 
   return (
-    <footer className={style.footer}>
+    <footer className="footer">
       <span>
         <Image
           style={{ filter: 'invert(1' }}

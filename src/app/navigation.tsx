@@ -10,7 +10,7 @@ const Navigation = () => {
   }, [])
 
   return (
-    <nav className="navbar navbar-dark navbar-expand-md sticky-top bg-black">
+    <nav className="navbar navbar-dark bg-black navbar-expand-md sticky-top">
       <div className="container-fluid m-3">
         <Link className="navbar-brand d-block-inline" href="/">
           <span>&#x1F680;</span>
@@ -25,14 +25,17 @@ const Navigation = () => {
           <span className="badge bg-light text-black ml-1">v13.4</span>
         </Link>
         <button 
-          className="navbar-toggler"
+          className="navbar-toggler collapsed d-flex flex-column justify-content-around"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#toggleNavigationBar"
           aria-controls="toggleNavigationBar"
           aria-expanded="false"
-          aria-label="toggle navigation bar"
-        > <span className="navbar-toggler-icon"></span>
+          aria-label="toggle navigation"
+        > 
+          <span className="custom-toggler-icon top-bar d-md-none"></span>
+          <span className="custom-toggler-icon mid-bar d-md-none"></span>
+          <span className="custom-toggler-icon low-bar d-md-none"></span>
         </button>
         <div className="collapse navbar-collapse" id="toggleNavigationBar">
           <ul className="navbar-nav text-uppercase">
