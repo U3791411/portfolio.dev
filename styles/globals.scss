@@ -2,6 +2,29 @@
 @import './mixins';
 @import './module';
 
+:root {
+  --local-fonts:
+    -apple-system, 
+    BlinkMacSystemFont, 
+    Segoe UI, 
+    Roboto, 
+    Oxygen,
+    Ubuntu, 
+    Cantarell, 
+    Fira Sans, 
+    Droid Sans, 
+    Helvetica Neue, 
+    sans-serif,
+    Menlo, 
+    Monaco, 
+    Lucida Console, 
+    Liberation Mono, 
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, 
+    Courier New, 
+    monospace;
+}
+
 @media (prefers-color-scheme: dark) {
   html { color-scheme: dark; }
   body {
